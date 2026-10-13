@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERZWALD 2027 - Digitale Flyer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            50: '#f2f7f4',
+                            100: '#e1ede5',
+                            600: '#2d6a4f',
+                            700: '#1b4332',
+                            800: '#081c15',
+                            900: '#04100c'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-forest-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col justify-between py-6 md:py-10">
+
+    <!-- Header (Auf Inhaltsbreite begrenzt) -->
+    <header class="max-w-4xl mx-auto px-4 w-full mb-8">
+        <div class="bg-cover bg-center rounded-2xl overflow-hidden shadow-xl relative text-white" 
+             style="background-image: url('./header.jpg');">
+            
+            <!-- Dunkler Filter für bessere Lesbarkeit -->
+            <div class="bg-forest-900/40 py-16 md:py-20 text-center backdrop-blur-[0px]">
+                <span class="text-xs uppercase tracking-widest text-emerald-300 font-semibold">Gemeinsam wachsen. Teilhabe erleben. Zukunft pflanzen.</span>
+                <h1 class="text-3xl md:text-5xl font-bold mt-2 drop-shadow-md">HERZWALD 2027</h1>
+                <p class="text-sm md:text-base text-gray-200 mt-2">Forstamtsbereich Torgelow | Landkreis Vorpommern-Greifswald</p>
+                <p class="text-sm font-medium text-emerald-200 mt-2">Freitag, 19. März 2027 | 10:00–13:00 Uhr</p>
+            </div>
+
+            <!-- Navigation mit Hash-Links -->
+            <nav class="bg-forest-800/95 border-t border-forest-600/50 backdrop-blur-sm">
+                <div class="flex flex-wrap justify-center md:justify-start px-2 py-1">
+                    <a href="#flyer1" id="btn-flyer1" class="tab-btn px-4 py-3 text-xs md:text-sm font-medium border-b-2 border-transparent text-gray-300 hover:text-white transition-colors">
+                        Save the Date (Kitas & Schulen)
+                    </a>
+                    <a href="#flyer2" id="btn-flyer2" class="tab-btn px-4 py-3 text-xs md:text-sm font-medium border-b-2 border-transparent text-gray-300 hover:text-white transition-colors">
+                        Politik & Verwaltung
+                    </a>
+                    <a href="#flyer3" id="btn-flyer3" class="tab-btn px-4 py-3 text-xs md:text-sm font-medium border-b-2 border-transparent text-gray-300 hover:text-white transition-colors">
+                        Spenden & Sponsoring
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Inhaltsbereich -->
+    <main class="max-w-4xl mx-auto px-4 flex-grow w-full">
+
+        <!-- FLYER 1 -->
+        <section id="flyer1" class="flyer-content hidden bg-white shadow-lg rounded-2xl p-6 md:p-10 border border-gray-100">
+            <div class="inline-block bg-forest-100 text-forest-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                Für Kitas, Schulen, psychosoziale Einrichtungen und weitere Teilnehmende
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-forest-800 mb-4">HERZWALD 2027: Gemeinsam wachsen. Teilhabe erleben. Zukunft pflanzen.</h2>
+            
+            <div class="bg-forest-50 p-4 rounded-lg border-l-4 border-forest-600 mb-6">
+                <p class="font-semibold text-forest-800">SAVE THE DATE</p>
+                <p class="text-gray-700">Freitag, 19. März 2027 | 10:00–13:00 Uhr</p>
+                <p class="text-gray-700 text-sm">Forstamtsbereich Torgelow · Landkreis Vorpommern-Greifswald</p>
+            </div>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-6 mb-2">Ein Wald. Viele Menschen. Eine gemeinsame Idee.</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Zum sechsten Mal zieht die Herzwald-Aktion durch Mecklenburg-Vorpommern. Seit 2022 bringen wir jedes Jahr an einem anderen Ort gemeinsam mit engagierten regionalen Partner*innen Menschen zusammen, um Bäume zu pflanzen, Natur zu erleben und Gemeinschaft zu stärken.
+            </p>
+            <p class="text-gray-700 font-medium mb-4">2027 sind wir in Torgelow zu Gast!</p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Eingeladen sind Kinder, Jugendliche und Erwachsene aus Kitas, Schulen und psychosozialen Einrichtungen sowie weitere interessierte Gruppen aus der Region. Menschen mit und ohne psychische Erkrankungen oder Beeinträchtigungen begegnen sich auf Augenhöhe, werden gemeinsam aktiv und schaffen etwas, das bleibt.
+            </p>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-8 mb-3">Das erwartet euch</h3>
+            <ul class="space-y-2 mb-6 text-gray-700">
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> Gemeinsam Bäume pflanzen und den Wald von morgen gestalten</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> Natur entdecken und mit allen Sinnen erleben</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> Kreative Mitmachangebote, Bewegung und Begegnung</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> Gemeinschaft erleben und zusammen etwas bewegen</li>
+            </ul>
+
+            <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                <p class="font-semibold text-gray-800">Seid dabei und merkt euch den Termin vor!</p>
+                <p class="text-sm text-gray-600 mt-1">Weitere Informationen zum genauen Treffpunkt, zum Programm und zur Anmeldung folgen.</p>
+            </div>
+
+            <div class="border-t pt-4 mt-6 text-sm text-gray-600">
+                <p class="font-semibold text-gray-800 mb-1">Kontakt und Informationen:</p>
+                <p>Landesverband Sozialpsychiatrie Mecklenburg-Vorpommern e. V.</p>
+                <p><a href="mailto:antje.werner@sozialpsychiatrie-mv.de" class="text-forest-600 underline">antje.werner@sozialpsychiatrie-mv.de</a></p>
+                <p class="text-xs text-gray-500 mt-3 italic">Die Herzwald-Aktion 2027 wird gemeinsam mit engagierten Partnerinnen vorbereitet und durchgeführt. Die Psychiatriekoordinatorin des Landkreises Vorpommern-Greifswald ist Teil des Vorbereitungsteams und unterstützt die Veranstaltung.</p>
+            </div>
+        </section>
+
+        <!-- FLYER 2 -->
+        <section id="flyer2" class="flyer-content hidden bg-white shadow-lg rounded-2xl p-6 md:p-10 border border-gray-100">
+            <div class="inline-block bg-forest-100 text-forest-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                Für Landrat, Bürgermeister und kommunale Verantwortungsträger*innen
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-forest-800 mb-4">HERZWALD 2027: Wo Menschen gemeinsam Zukunft pflanzen.</h2>
+            
+            <div class="bg-forest-50 p-4 rounded-lg border-l-4 border-forest-600 mb-6">
+                <p class="text-gray-700">Freitag, 19. März 2027 | 10:00–13:00 Uhr</p>
+                <p class="text-gray-700 text-sm">Forstamtsbereich Torgelow · Landkreis Vorpommern-Greifswald</p>
+            </div>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-6 mb-2">Sechs Aktionen. Unterschiedliche Orte. Eine gemeinsame Idee.</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Seit 2022 zieht die Herzwald-Aktion durch Mecklenburg-Vorpommern. Gemeinsam mit engagierten Partner*innen vor Ort verbinden wir jedes Jahr ökologisches Engagement mit psychischer Gesundheit und gesellschaftlicher Teilhabe. 2027 findet die 6. HerzWald-Aktion im Landkreis Vorpommern-Greifswald statt.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Im Mittelpunkt steht eine gemeinsame Baumpflanzaktion, bei der Menschen mit und ohne psychische Erkrankungen oder Beeinträchtigungen, Kinder, Jugendliche und Erwachsene zusammenkommen. Gemeinsam gestalten sie ein Stück Wald, erleben Begegnung auf Augenhöhe und erfahren, wie gemeinsames Handeln verbindet und Selbstwirksamkeit stärkt.
+            </p>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-8 mb-2">Torgelow – ein guter Ort für Natur und Gesundheit</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Mit dem Forstamt Torgelow haben wir einen engagierten Partner für die Umsetzung gewonnen. Die bereits bestehenden Aktivitäten rund um den Torgelower Gesundheitspfad bieten wertvolle Anknüpfungspunkte für die Verbindung von Natur, Bewegung und Gesundheitsförderung. Die Psychiatriekoordinatorin des Landkreises Vorpommern-Greifswald ist aktiv in die Vorbereitung eingebunden und unterstützt die Organisation und regionale Vernetzung.
+            </p>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-8 mb-3">Gemeinsam Verantwortung übernehmen</h3>
+            <p class="text-gray-700 mb-3">Herzwald verbindet drei Anliegen:</p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> <strong>Wald und Zukunft:</strong> Einen gemeinsamen Beitrag zur Entwicklung unserer Wälder leisten.</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> <strong>Gesundheit und Teilhabe:</strong> Natur als Raum für Begegnung, Wohlbefinden und Selbstwirksamkeit erleben.</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> <strong>Regionaler Zusammenhalt:</strong> Menschen, Einrichtungen und engagierte Partner*innen miteinander verbinden.</li>
+            </ul>
+
+            <div class="bg-forest-50 p-6 rounded-lg border border-forest-100 mb-6">
+                <h3 class="text-lg font-bold text-forest-800 mb-2">Unterstützen Sie Herzwald 2027!</h3>
+                <p class="text-gray-700 mb-4">
+                    Wir würden uns freuen, wenn der Landkreis Vorpommern-Greifswald und die Stadt Torgelow die sechste Herzwald-Aktion unterstützen und begleiten. Denkbar sind eine ideelle Unterstützung oder Schirmherrschaft, die Bekanntmachung über regionale Netzwerke sowie die Vermittlung weiterer Kooperationspartner*innen und Fördermöglichkeiten.
+                </p>
+                <p class="font-semibold text-forest-800">Lassen Sie uns gemeinsam ein Zeichen setzen – für unsere Wälder, für Gesundheit und für gesellschaftlichen Zusammenhalt.</p>
+            </div>
+
+            <div class="border-t pt-4 mt-6 text-sm text-gray-600">
+                <p class="font-semibold text-gray-800 mb-1">Kontakt:</p>
+                <p>Landesverband Sozialpsychiatrie Mecklenburg-Vorpommern e. V.</p>
+                <p><a href="mailto:antje.werner@sozialpsychiatrie-mv.de" class="text-forest-600 underline">antje.werner@sozialpsychiatrie-mv.de</a></p>
+                <p class="text-xs text-gray-500 mt-3 italic">Unter aktiver Mitwirkung der Psychiatriekoordinatorin des Landkreises Vorpommern-Greifswald im Vorbereitungsteam.</p>
+            </div>
+        </section>
+
+        <!-- FLYER 3 -->
+        <section id="flyer3" class="flyer-content hidden bg-white shadow-lg rounded-2xl p-6 md:p-10 border border-gray-100">
+            <div class="inline-block bg-forest-100 text-forest-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                Für Unternehmen, Sparkassen, Stadtwerke, Stiftungen und regionale Fördernde
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-forest-800 mb-4">HERZWALD 2027: Wo Menschen Zukunft pflanzen.</h2>
+            
+            <div class="bg-forest-50 p-4 rounded-lg border-l-4 border-forest-600 mb-6">
+                <p class="text-gray-700">Freitag, 19. März 2027 | 10:00–13:00 Uhr</p>
+                <p class="text-gray-700 text-sm">Forstamtsbereich Torgelow · Landkreis Vorpommern-Greifswald</p>
+            </div>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-6 mb-2">Sechs Aktionen. Viele Begegnungen. Eine Idee, die weiterwächst.</h3>
+            <p class="text-gray-700 italic mb-4">Ein Baum bleibt. Und manchmal auch das Gefühl: Ich habe etwas bewegt.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Seit 2022 zieht die Herzwald-Aktion durch Mecklenburg-Vorpommern. Jedes Jahr finden wir engagierte regionale Partner*innen, die mit uns die verbindende und gesundheitsfördernde Kraft des Waldes erlebbar machen. 2027 pflanzen wir zum sechsten Mal gemeinsam Zukunft – diesmal in Torgelow.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Herzwald ist mehr als eine Baumpflanzaktion. Hier begegnen sich Menschen mit und ohne psychische Erkrankungen oder Beeinträchtigungen, Kinder, Jugendliche und Erwachsene. Gemeinsam gestalten sie ein Stück Wald, erleben Gemeinschaft und erfahren, dass jede und jeder etwas bewirken kann. So verbinden wir ökologisches Engagement mit psychischer Gesundheit und gesellschaftlicher Teilhabe.
+            </p>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-8 mb-2">Gemeinsam aktiv für Natur, Gesundheit und Teilhabe</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Gemeinsam mit dem Forstamt Torgelow und weiteren regionalen Partner*innen planen wir eine dreistündige Pflanzaktion, ergänzt durch kreative Naturangebote, Bewegung und gemeinsame Erlebnisse. Auch die Psychiatriekoordinatorin des Landkreises Vorpommern-Greifswald ist aktiv in die Vorbereitung eingebunden und unterstützt die regionale Vernetzung. Unser Ziel ist eine Aktion, bei der Menschen unabhängig von ihrer Lebenssituation gemeinsam aktiv werden und etwas Bleibendes schaffen können.
+            </p>
+
+            <div class="bg-amber-50 border border-amber-200 p-4 rounded-lg mb-6">
+                <p class="font-semibold text-amber-900 mb-1">Damit alle dabei sein können, brauchen wir Ihre Unterstützung.</p>
+                <p class="text-sm text-amber-800">Die Schutzgemeinschaft Deutscher Wald MV hat bereits 2.000 Euro für Herzwald 2027 zugesagt. Für die Umsetzung benötigen wir weitere finanzielle und praktische Unterstützung. Die konkrete Kostenplanung wird derzeit gemeinsam mit dem Forstamt abgestimmt.</p>
+            </div>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-6 mb-3">Ihre Unterstützung hilft uns dabei:</h3>
+            <ul class="space-y-2 mb-6 text-gray-700">
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> Die Pflanzfläche vorzubereiten, Bäume zu pflanzen und notwendige Schutzmaßnahmen zu finanzieren.</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> Materialien und begleitende Natur-, Bewegungs- und Kreativangebote zu ermöglichen.</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> Die Teilnahme von Kindern, Jugendlichen und Menschen aus psychosozialen Einrichtungen zu unterstützen.</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> Bei Bedarf Transportmöglichkeiten zu organisieren, damit fehlende Fahrgelegenheiten kein Hindernis darstellen.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-forest-800 mt-6 mb-3">So können Sie Herzwald 2027 unterstützen</h3>
+            <ul class="space-y-2 mb-6 text-gray-700">
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> <strong>Mit einer Geldspende:</strong> Jeder Beitrag hilft, die Pflanzaktion und das gemeinsame Erlebnis zu ermöglichen.</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> <strong>Mit Sachleistungen:</strong> Beispielsweise durch Materialien, Transportmöglichkeiten oder praktische Unterstützung.</li>
+                <li class="flex items-start"><span class="text-forest-600 font-bold mr-2">&bull;</span> <strong>Als regionaler Partner:</strong> Durch die Vermittlung weiterer Unterstützer*innen, eigene Angebote oder die Bekanntmachung der Aktion.</li>
+            </ul>
+
+            <p class="font-semibold text-forest-800 mb-4">Gemeinsam Zukunft pflanzen – für unseren Wald und für ein gutes Miteinander.</p>
+
+            <div class="bg-gray-50 p-4 rounded-lg mb-6 text-sm text-gray-700 space-y-1">
+                <p class="font-semibold text-gray-800">Spendenempfängerin:</p>
+                <p>Waldstiftung Mecklenburg-Vorpommern</p>
+                <p>Spendenkonto: [IBAN ergänzen]</p>
+                <p>Verwendungszweck: HerzWald 2027</p>
+                <p class="text-xs text-gray-500 mt-2">QR-Code: [Nach Abstimmung ergänzen]</p>
+            </div>
+
+            <div class="border-t pt-4 mt-6 text-sm text-gray-600">
+                <p class="font-semibold text-gray-800 mb-1">Kontakt und Informationen:</p>
+                <p>Landesverband Sozialpsychiatrie Mecklenburg-Vorpommern e. V.</p>
+                <p><a href="mailto:antje.werner@sozialpsychiatrie-mv.de" class="text-forest-600 underline">antje.werner@sozialpsychiatrie-mv.de</a></p>
+                <p class="text-xs text-gray-500 mt-3 italic">Unter aktiver Mitwirkung der Psychiatriekoordinatorin des Landkreises Vorpommern-Greifswald im Vorbereitungsteam.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Sponsoren & Footer -->
+    <footer class="max-w-4xl mx-auto px-4 w-full mt-12">
+        <div class="bg-white shadow-lg rounded-2xl p-6 md:p-8 border border-gray-100 text-center">
+            <h4 class="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-6">Partner und Unterstützer</h4>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 items-center">
+                <!-- Logo 1 -->
+                <div class="bg-forest-50/50 p-3 rounded-xl border border-gray-200/80 flex items-center justify-center h-24 hover:bg-forest-50 transition-colors">
+                    <img src="https://www.wald-mv.de/static/WALDMV/Dateien/Bilder/logo-landesforst-mv-.svg" alt="Landesforst MV" class="max-h-16 max-w-full object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs font-semibold text-forest-800 hidden">Landesforst MV</span>
+                </div>
+
+                <!-- Logo 2 -->
+                <div class="bg-forest-50/50 p-3 rounded-xl border border-gray-200/80 flex items-center justify-center h-24 hover:bg-forest-50 transition-colors">
+                    <img src="https://www.wald-mv.de/static/WALDMV/Dateien/Bilder/Stiftung/waldstiftung-mv-logo.png" alt="Waldstiftung MV" class="max-h-16 max-w-full object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs font-semibold text-forest-800 hidden">Waldstiftung MV</span>
+                </div>
+
+                <!-- Logo 3 -->
+                <div class="bg-forest-50/50 p-3 rounded-xl border border-gray-200/80 flex items-center justify-center h-24 hover:bg-forest-50 transition-colors">
+                    <img src="https://sozialpsychiatrie-mv.de/wp-content/uploads/2021/04/LSP-Logo-1.jpg" alt="Landesverband Sozialpsychiatrie MV" class="max-h-16 max-w-full object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs font-semibold text-forest-800 hidden">Landesverband Sozialpsychiatrie MV</span>
+                </div>
+
+                <!-- Logo 4 -->
+                <div class="bg-forest-50/50 p-3 rounded-xl border border-gray-200/80 flex items-center justify-center h-24 hover:bg-forest-50 transition-colors">
+                    <img src="https://thumb.wikimedia.org/wikipedia/de/thumb/1/18/Schutzgemeinschaft_Deutscher_Wald_Logo.svg/960px-Schutzgemeinschaft_Deutscher_Wald_Logo.svg.png?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=thumbnail&_=20110908160321" alt="Schutzgemeinschaft Deutscher Wald MV" class="max-h-16 max-w-full object-contain" onError="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="text-xs font-semibold text-forest-800 hidden">Schutzgemeinschaft Deutscher Wald MV</span>
+                </div>
+            </div>
+
+            <p class="text-xs text-gray-400 mt-6">&copy; 2027 HERZWALD - Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript zur automatischen Erkennung des Hashs in der URL -->
+    <script>
+        function updateViewFromHash() {
+            let hash = window.location.hash.substring(1);
+            if (!hash || !['flyer1', 'flyer2', 'flyer3'].includes(hash)) {
+                hash = 'flyer1';
+            }
+
+            document.querySelectorAll('.flyer-content').forEach(el => el.classList.add('hidden'));
+
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('border-white', 'text-white');
+                btn.classList.add('border-transparent', 'text-gray-300');
+            });
+
+            document.getElementById(hash).classList.remove('hidden');
+
+            const activeBtn = document.getElementById('btn-' + hash);
+            if (activeBtn) {
+                activeBtn.classList.remove('border-transparent', 'text-gray-300');
+                activeBtn.classList.add('border-white', 'text-white');
+            }
+        }
+
+        window.addEventListener('hashchange', updateViewFromHash);
+        window.addEventListener('DOMContentLoaded', updateViewFromHash);
+    </script>
+</body>
+</html>
